@@ -17,7 +17,6 @@ class CodeSerializer(serializers.Serializer):
         return code
 
     def update(self, instance, validated_data):
-
         instance.code = validated_data.get('code')
         instance.chat_id = validated_data.get('chat_id')
         instance.telegram_username = validated_data.get('telegram_username')
